@@ -1,7 +1,10 @@
-from flask import Flask
 
-app=Flask(__name__)
-
-@app.route("/")
-def index():
-    return 'hello!!!'
+from collections import OrderedDict
+ 
+class LruCache:
+ 
+    # initialising capacity
+    def __init__(self, capacity: int):
+        self.cache = OrderedDict()
+        self.capacity = capacity
+       

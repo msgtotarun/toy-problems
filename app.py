@@ -7,4 +7,7 @@ class LruCache:
     def __init__(self, capacity: int):
         self.cache = OrderedDict()
         self.capacity = capacity
-       
+
+    def get(self, key: int) -> int:
+        
+    def put(self, key: int, value: int) -> None:
